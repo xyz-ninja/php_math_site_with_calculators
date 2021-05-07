@@ -1,0 +1,29 @@
+/* ЭТОТ CSS ФАЙЛ НУЖЕН ДЛЯ ДИЗАЙНА ТЕСТА ПО АЛГЕБРЕ */
+.test_tab {
+	width: auto;
+    height: auto;
+    background-color: #eee;
+    padding:15px;
+}
+
+.test_tab_img {}
+.test_tab_answer_block {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 115px;
+    
+    //border: 1px solid #ddd;
+    //background-color: #fff;
+    //box-shadow: 0 5px 0 #ddd;
+}
+
+.test_tab_answer_block h2 {
+    font-size: 16px;
+}
+
+// анимация при наведении мыши
+.test_tab_answer_block:hover {
+    cursor: pointer;
+    background-color: azure;
+}

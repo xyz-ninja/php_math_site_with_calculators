@@ -1,0 +1,383 @@
+* {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/* ЗДЕСЬ УКАЗАНЫ СТИЛИ ДЛЯ РАЗЛИЧНЫХ ЧАСТЕЙ САЙТА */
+
+body {
+	background-color: #1e1f26;
+	color: #1e1f26;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+
+/* ВЕРХНИЙ БЛОК */
+
+header {
+	width: 965px;
+	height: 100px;
+	margin: 5px auto;
+	padding-left: 45px;
+	padding: 15px;
+	color: #fff;
+	font-family: tahoma;
+	background-color: #283655;
+}
+
+header a {
+	color: #F5EB78;
+	text-decoration: none;
+}
+
+/* БЛОК "ОБЁРТКА" */
+
+.wrapper {
+	width: 995px;
+	height: auto;
+	margin: auto;
+}
+
+/* это нужно для правильного расположения float элементов */
+.wrapper:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+/* ЛЕВАЯ ЧАСТЬ БЛОКА WRAPPER */
+
+.wrapper #wrapper_left_block {
+	width: 280px;
+	height: inherit;
+	float: left;
+}
+.wrapper #wrapper_left_block a {
+	font-weight: bold;
+	color: #f4f4ef
+}
+.wrapper #wrapper_left_block_up {
+	padding: 20px;
+	margin-top: 2px;
+	width: inherit;
+	color: #f4f4ef;
+	background-color: #283655;
+	margin-bottom: 5px;
+}
+
+.wrapper #wrapper_left_block_down {
+	width: 320px;
+	padding: 10px 0;
+	font-size: 22px;
+	background-color: #283655;
+	color: #f4f4ef
+}
+
+.wrapper_left__test,
+.wrapper_left__graph,
+.wrapper_left__calc,
+.wrapper_left__result,
+.wrapper_left__article{
+	display: block;
+	width: 100%;
+	height: 30px;
+	font-size: 20px; 
+	line-height: 30px;
+	text-decoration: none; 
+	color: white;
+}
+.wrapper_left__test:hover{
+	background: #4d648d;
+}
+.wrapper_left__graph:hover{
+	background: #4d648d;
+}
+.wrapper_left__calc:hover{
+	background: #4d648d;
+}
+.wrapper_left__result:hover{
+	background: #4d648d;
+}
+.wrapper_left__article:hover{
+	background: #4d648d;
+}
+/* ПРАВАЯ ЧАСТЬ БЛОКА WRAPPER */
+.sign-form p{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.form__register{
+	text-decoration: none;
+}
+.form__button{
+	width: 100%;
+	font-size: 15px;
+	height: 30px;
+	color: #f4f4ef;
+	font-weight: bold;
+	background-color: #4d648d;
+	margin-bottom: 20px;
+}
+.wrapper #wrapper_right_block {
+	background: #f4f4ef;
+	width: 665px;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-top: 2px;
+	height: auto;
+	float: right;
+}
+
+#bottom_block {
+	margin: 0 auto;
+	padding-top: 15px;
+
+	width: 850px;
+	height: 50px;
+}
+
+/* БЛОК СО СТАТЬЯМИ */
+.article__text{
+	width: 637px;
+	height: 400px; 
+	font-size: 20px;
+	resize: none;
+}
+
+.article__button{
+	width: 150px;
+    font-weight: bold;
+    height: 50px;
+    background: #4d648d;
+    text-align: center;
+    color: #f4f4ef;
+    margin: 0 auto;
+}
+article {
+	width: auto;
+	height: auto;
+	margin: auto;
+}
+
+.article_hints{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+
+
+}
+
+.article__name{
+	font-weight: bold;
+}
+
+.article__hints-item{
+	list-style: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.login{
+	width: 200px;
+	height: 20px;
+
+	margin-left: 13px;
+	background-color: #f4f4ef;
+}
+.password{
+	width: 200px;
+	height: 20px;
+	background-color: #f4f4ef;
+}
+/* САМА СТАТЬЯ И ЕЁ ЭЛЕМЕНТЫ*/
+
+article section {
+	padding: 10px;
+	border: 2px solid #1e1f26;
+	background: #f4f4ef;
+}
+
+article section h2 {
+	color: #41738A;
+	font-size: 17pt;
+}
+
+article section p {
+	font-size: 10pt;
+}
+
+article section p.date {
+	font-size: 9pt;
+	color: #516168;
+	text-align: right;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+.register__button{
+	width: 300px;
+	height: 50px;
+	margin: 0 auto;
+	font-weight: bold;
+	font-size: 20px;
+	background-color: #4d648d;
+	color: #f4f4ef;
+}
+
+
+/* БЛОК С КНОПКАМИ "ВПЕРЕД"/"НАЗАД" ДЛЯ ПЕРЕЛИСТЫВАНИЯ СТРАНИЦ */
+
+nav {
+	width: 850px;
+	height: auto;
+	margin: 10px auto;
+	margin-top: 3px;
+	padding-top: 4px;
+	text-align: center;
+}
+
+
+/* САМА КНОПКА */
+
+nav a {
+	padding: 15px;
+	background-color: #fff;
+	border: 2px solid #111;
+	text-decoration: none;
+	color: black;
+	font-size: 17px;
+	margin: 5px;
+	border-radius: 0px 0px 30px 30px;
+}
+
+
+/* РЕЙТИНГ ПОЛЬЗОВАТЕЛЕЙ */
+.table_users_rating {
+	width: 100%;
+	border: 3px solid #1e1f26;
+	padding: 10px;
+}
+
+.t_users_rating_name {
+	padding: 14px;
+	text-align: center;
+	border: 1px solid #1e1f26;
+}
+
+.t_users_rating_score {
+	padding: 14px;
+	text-align: center;
+	border: 1px solid #1e1f26;
+}
+
+#calculators_handler {
+	padding: 30px;
+	font-family: Arial;
+}
+
+#normal_calculator {
+
+}
+
+.normal_calculator__container{
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.calculator_button {
+	border: 2px solid #283655;
+	
+	width: 75px;
+	height: 48px;
+	font-weight: bold;
+	font-size: 20px;
+	background-color: #4d648d;
+	color: #f4f4ef;
+}
+
+.calculator_button_proizv{
+	border: 2px solid #283655;
+	
+	width: 200px;
+	height: 48px;
+	font-weight: bold;
+	font-size: 20px;
+	background-color: #4d648d;
+	color: #f4f4ef;
+}
+.calculator_button:hover {
+	cursor: pointer;
+}
+.btn_container{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 50px;
+}
+.tab_button {
+	border: none;
+	text-decoration: none;
+	font-size: 20px;
+	color: #f4f4ef;
+	background-color:#4d648d;
+	font-weight: bold;
+}
+
+
+.active_calc{
+	background-color: #f4f4ef;
+	color: #283655;
+}
+.tab_button:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+#calc_symbol{
+	font-size: 25px;
+	margin: 0;
+	margin-right: 10px;
+}
+#calc_first_num, #calc_second_num{
+	color: #1e1f26;
+	margin-right: 10px;
+	width: 132px;
+	height: 20px;
+	border: 0.5px solid #4d648d;
+	padding: 3px;
+	font-family: Consolas;
+	font-size: 20px;
+	text-align: center;
+}
+#calc_der_f{
+	color: #1e1f26;
+	margin-right: 10px;
+	width: 250px;
+	height: 20px;
+	border: 0.5px solid #4d648d;
+	padding: 3px;
+	font-family: Consolas;
+	font-size: 20px;
+}
+#calc_der_x{
+	color: #1e1f26;
+	margin-right: 10px;
+	width: 132px;
+	height: 20px;
+	border: 0.5px solid #4d648d;
+	padding: 3px;
+	font-family: Consolas;
+	font-size: 20px;
+	text-align: center;
+} 
+
+#answer_label, #answer_d_label {
+	font-size: 25px;
+}
+
+#history_block {
+	padding: 20px;
+	padding-top: 40px;
+	font-family: Tahoma;
+}
